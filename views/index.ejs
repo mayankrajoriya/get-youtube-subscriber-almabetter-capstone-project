@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins]">
+    
+
+    <p class="text-2xl font-medium absolute top-20 start-52 ">YouTube Subscriber</p>
+    <div class="px-60 flex items-center gap-14">
+      <div
+        class="w-1/2 h-screen bg-red-100 flex justify-center items-center px-10"
+      >
+        <div>
+          <h1 class="text-4xl font-medium tracking-tighter">
+            welcome to <span class="text-red-600 font-semibold">Get Youtube Subscribers</span>
+          </h1>
+          <h5 class="font-medium text-2xl mt-2 mb-6 tracking-tighter">
+            create your account
+          </h5>
+          <div>
+            <form action="/create" method="post">
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full name"
+                required
+                class="w-full p-3 rounded-md outline-none mb-4"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="w-full p-3 rounded-md outline-none mb-4"
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                class="w-full p-3 rounded-md outline-none mb-4"
+              />
+              <input
+                type="submit"
+                value="Create My Account"
+                class="bg-red-600 px-5 py-2 rounded-full text-white"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="px-4 py-3 bg-red-600 text-xl text-white rounded-full">or</p>
+      <div  class="px-10 w-1/2">
+        <h1 class="font-medium text-2xl mt-2 mb-6 tracking-tighter">Login your Account</h1>
+        <div>
+          <form action="/login" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="w-full p-3 rounded-md outline-none mb-4 bg-zinc-200"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+              class="w-full p-3 rounded-md outline-none mb-4 bg-zinc-200"
+            />
+            <input
+            type="submit"
+            value="Login"
+            class="bg-red-600 px-6 py-2 rounded-full text-white"
+          />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
