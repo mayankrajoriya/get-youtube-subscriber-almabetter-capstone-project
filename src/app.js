@@ -148,7 +148,12 @@ app.get("/subscribers/:id",isLoggedIn, async (req, res) => {
   const subscriber = await subscriberModel.findOne({
     _id: req.params.id,
   });
-  res.send(subscriber);
+  if(subscriber){
+    res.send(subscriber);
+
+  }else{
+    res.send("Id does not exist")
+  }
 });
 
 module.exports = app;

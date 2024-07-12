@@ -1,0 +1,11 @@
+@media (max-width:480px) {
+    .head{
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        
+     }
+     .main-div{
+        flex-direction: column;
+     }
+}
