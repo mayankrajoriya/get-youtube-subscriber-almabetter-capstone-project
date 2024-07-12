@@ -1,17 +1,12 @@
-@media (max-width:480px) {
-    .head{
-        position: absolute;
-        top: 10px;
-        left: 6px;
-        
-     }
-     .subscriber-nav{
-        position: absolute;
-        top: 60px;
-        right: 6px;
-     }
-     .main-div{
-     
-     }
-   
+@media (max-width: 680px) {
+  .head {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+  }
+  .subscriber-nav {
+    position: absolute;
+    top: 60px;
+    right: 6px;
+  }
 }
