@@ -7,7 +7,6 @@ const subscriberModel = require("../models/subscribers");
 const path = require("path");
 
 const cookieParser = require("cookie-parser");
-
 app.use(cookieParser());
 
 app.set("view engine", "ejs");
@@ -56,7 +55,7 @@ app.get("/subscribers/names",  async (req, res) => {
     .select("-_id")
     .select("-subscribedDate")
     .select("-__v");
-  res.json(subscribers);
+  res.status(200).json(subscribers);
 });
 
 //subscriber search by id
@@ -73,10 +72,10 @@ app.get("/subscribers/:id", async (req, res) => {
     _id: req.params.id,
   });
   if(subscriber){
-    res.send(subscriber);
+    res.status(200).send(subscriber);
 
   }else{
-    res.send("Id does not exist")
+    res.status(404).send("Id does not exist")
   }
 });
 
