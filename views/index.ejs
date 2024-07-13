@@ -11,81 +11,57 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/home.css">
   </head>
   <body class="font-[Poppins]">
-    
-
-    <p class="head text-2xl font-medium md:absolute md:top-20 md:start-52">YouTube Subscriber</p>
-    <div class="main-div md:px-60 flex items-center gap-14">
-      <div
-        class="md:w-1/2 h-screen bg-red-100 flex justify-center items-center px-10"
+    <p class="head text-2xl font-medium md:absolute md:top-20 md:start-52">
+      YouTube Subscriber
+    </p>
+   
+      <a
+        href="/subscriber/create"
+        class="home-nav1 md:absolute md:top-20 md:end-80 rounded-md bg-green-600 text-white px-3 py-2"
+        >To Subscribe</a
       >
-        <div>
-          <h1 class="text-4xl font-medium tracking-tighter">
-            welcome to <span class="text-red-600 font-semibold">Get Youtube Subscribers</span>
-          </h1>
-          <h5 class="font-medium text-2xl mt-2 mb-6 tracking-tighter">
-            create your account
-          </h5>
+
+    <div class="w-full h-screen flex justify-center items-center">
+      <div class=" bg-zinc-900 md:w-1/3 rounded-md md:h-1/2 py-16 px-6">
+        <div class="text-center mb-4">
+          <a
+            href="/subscribers"
+            class="text-blue-500 border-b border-blue-500 text-center text-2xl"
+            >All Subscribers</a
+          >
+        </div>
+          <div class="text-center mb-10">
+            <a
+              href="/subscribers/names"
+              class="text-blue-500 border-b border-blue-500 text-center text-2xl"
+              >Subscribers with name and subscribed channel</a
+            >
+          </div>
           <div>
-            <form action="/create" method="post">
+            <form action="/subscribersid" method="post">
+              <div class="flex justify-center gap-6">
+                <label for="userid" class="text-white text-3xl">Id:</label>
+                <input
+                name="subscriberid"
+                  type="text"
+                  placeholder="Search with id"
+                  class="md:w-80 p-2 rounded-md outline-none mb-4 bg-transparent border border-zinc-600 text-zinc-500"
+                />
+           
+              </div>
+            <div class="flex justify-center">
               <input
-                type="text"
-                name="fullname"
-                placeholder="Full name"
-                required
-                class="w-full p-3 rounded-md outline-none mb-4"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                class="w-full p-3 rounded-md outline-none mb-4"
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-                class="w-full p-3 rounded-md outline-none mb-4"
-              />
-              <input
-                type="submit"
-                value="Create My Account"
-                class="bg-red-600 px-5 py-2 rounded-full text-white"
-              />
+              type="submit"
+              value="Search"
+              class="bg-green-800 px-2 py-2  rounded-md text-white"
+            />
+            </div>
             </form>
           </div>
-        </div>
-      </div>
-      <p class="px-4 py-3 bg-red-600 text-xl text-white rounded-full">or</p>
-      <div  class="px-10 pb-5 md:w-1/2">
-        <h1 class="font-medium text-2xl mt-2 mb-6 tracking-tighter">Login your Account</h1>
-        <div>
-          <form action="/login" method="post">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              class="w-full p-3 rounded-md outline-none mb-4 bg-zinc-200"
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-              class="w-full p-3 rounded-md outline-none mb-4 bg-zinc-200"
-            />
-            <input
-            type="submit"
-            value="Login"
-            class="bg-red-600 px-6 py-2 rounded-full text-white"
-          />
-          </form>
-        </div>
+      
       </div>
     </div>
   </body>

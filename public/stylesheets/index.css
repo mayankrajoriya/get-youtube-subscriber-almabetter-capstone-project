@@ -5,7 +5,15 @@
         left: 6px;
         
      }
-     .main-div{
-        flex-direction: column;
+     .home-nav1{
+        position: absolute;
+        top: 60px;
+        left: 6px;
      }
+     .home-nav2{
+        position: absolute;
+        top: 60px;
+        right: 6px;
+     }
+   
 }
