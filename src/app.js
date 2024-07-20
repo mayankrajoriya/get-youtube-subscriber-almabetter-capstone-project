@@ -2,12 +2,7 @@ const express = require("express");
 const app = express();
 
 const subscriberModel = require("../models/subscribers");
-
-
 const path = require("path");
-
-const cookieParser = require("cookie-parser");
-app.use(cookieParser());
 
 app.set("view engine", "ejs");
 app.use(express.json());
