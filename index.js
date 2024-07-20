@@ -14,7 +14,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 // Connect to DATABASE
-const DATABASE_URL = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.odb2xeh.mongodb.net/youtube?retryWrites=true&w=majority&appName=Cluster0`;
+const DATABASE_URL =`mongodb+srv://mayank601665:mayank@6016@cluster0.odb2xeh.mongodb.net/youtube`;
+
 mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection
 db.on('error', (err) => console.log(err))
